@@ -2,14 +2,14 @@
 // Columns in existing CSV
   // Required fields
   "ColumnInventarisnummer": "",
-  "ColumnBenamingArchiefeenheid": "",
+  "ColumnBenamingArchiefeenheid": "", // error if empty
   "ColumnSoortBenaming": "",
-  "ColumnPeriodeStartVanaf": "",
+  "ColumnPeriodeStartVanaf": "", // error if empty
   "ColumnPeriodeEindTot": "",
   "ColumnPeriodeOmschrijving": "",
-  "ColumnVerschijningsvorm": "",
-  "ColumnSerienaam": "",
-  "ColumnDepotplaats": "",
+  "ColumnVerschijningsvorm": "", // error if empty AND value is empty
+  "ColumnSerienaam": "", // error if empty AND value is empty
+  "ColumnDepotplaats": "", // error if empty
   // Optional fields
   "ColumnSoortNummer": "",
   "ColumnNummer": "",
@@ -62,10 +62,10 @@
 // Fixed values
   // Required
   "encoding": "utf-8-sig",
-  "ValueIsBenamingGeautoriseerd": "1",
-  "ValueVerschijningsvorm": "Analoog",
-  "ValueSerienaam": "Algemeen reeks",
-  "ValueSegment": "Segment Gemeente",
+  "ValueIsBenamingGeautoriseerd": 1,
+  "ValueVerschijningsvorm": "Analoog", // error if empty AND column is empty
+  "ValueSerienaam": "Algemeen reeks", // error if empty AND column is empty
+  "ValueSegment": "Segment Gemeente", // error if empty
   //Optional
   "ValueSoortBeschrijving": "",
   "ValueSeriecode": "",
